@@ -1,0 +1,120 @@
+.sidebar {
+  width: 250px; /* Augmenté de 275px à 300px */
+  height: 100vh;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Makes the sidebar scrollable */
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li button {
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li button:hover {
+  background-color: #34495e;
+}
+
+.sidebar ul li button .icon {
+  margin-right: 10px;
+}
+
+.sub-menu {
+  padding-left: 0px; /* Adjusted padding to align with parent menu */
+  background-color: #2c3e50; /* Use same background color as sidebar */
+  margin-top: 5px; /* Add some space between the sub-menu and parent button */
+}
+
+.sub-menu li {
+  margin: 5px 0; /* Add some space between each sub-menu item */
+}
+
+.sub-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.sub-menu li button {
+  background: #34495e;
+  border: none;
+  color: #ecf0f1;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.sub-menu li button:hover {
+  background-color: #2c3e50;
+}
+
+.icon-chevron {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.icon-chevron.open {
+  transform: rotate(180deg);
+}
+
+.sidebar .logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sidebar .logo {
+  max-width: 80%; 
+  height: auto; 
+}
+/* Style for buttons when the section is open */
+.button-open {
+  background-color: black !important;  /* Black background when open */
+  color: white !important;  /* White text for contrast */
+}
+
+/* For the sub-menu buttons */
+.sub-menu-open button {
+  background-color: black !important;
+  color: white !important;
+}
+
+
+/* Ensure that the chevron rotates only when the sub-menu is open */
+.icon-chevron.open {
+  transform: rotate(180deg);
+  color: #fff;  /* Ensure chevron also turns white when open */
+}
