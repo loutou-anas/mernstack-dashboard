@@ -12,8 +12,7 @@ A full-stack dashboard application built using the **MERN stack** (MongoDB, Expr
 4. [Backend Setup](#backend-setup)  
 5. [Frontend Setup](#frontend-setup)  
 6. [Environment Variables](#environment-variables)  
-7. [Project Structure](#project-structure)  
-8. [License](#license)
+7. [Project Structure](#project-structure) 
 
 ---
 
