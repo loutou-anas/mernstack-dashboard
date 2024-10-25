@@ -54,7 +54,7 @@ To run this project locally, you need to set up both the backend and frontend. F
    ```bash
    npm install
 3. **Set up environment variables:**
-**Create a `.env` file in the `backend/` folder with the following values:**
+<br>**Create a `.env` file in the `backend/` folder with the following values:**
    ```bash
    PORT=5000
    MONGO_URI=<your-mongo-db-uri>
